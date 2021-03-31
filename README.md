@@ -1,9 +1,9 @@
 # Spring-ToDoList
-###List
+### List
 ![Alt Text](https://github.com/akbulutmustafa/Spring-ToDoList/blob/main/src/main/resources/static/M1.PNG)
-###isDone
+### isDone
 ![Alt Text](https://github.com/akbulutmustafa/Spring-ToDoList/blob/main/src/main/resources/static/M4.PNG)
-###Edit
+### Edit
 ![Alt Text](https://github.com/akbulutmustafa/Spring-ToDoList/blob/main/src/main/resources/static/M2.PNG)
-###Add
+### Add
 ![Alt Text](https://github.com/akbulutmustafa/Spring-ToDoList/blob/main/src/main/resources/static/M3.PNG)
