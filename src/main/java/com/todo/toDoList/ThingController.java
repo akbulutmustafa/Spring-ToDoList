@@ -33,22 +33,13 @@ public class ThingController {
 	public String list(Model model) {
 		model.addAttribute("things", thingService.getAll());
 		return "things";
-	}
-	
-	@GetMapping("delete/{id}")
-	public String delete(@PathVariable("id") int id, Model model){
-		Thing thing = thingService.getById(id);
-		thingService.delete(thing);
-		model.addAttribute("students", thingService.getAll());
-        return "redirect:/";
-	}
-	*/
+	}*/
 	
 	@GetMapping("done/{id}")
 	public String makeItDone(@PathVariable("id") int id, Model model) {
 		Thing thing = thingService.getById(id);
 		thing.setDone(true);
-		model.addAttribute("students", thingService.getAll());
+		model.addAttribute("thing", thingService.getAll());
 		return "redirect:/";
 	}
 	
@@ -56,7 +47,7 @@ public class ThingController {
 	public String notDone(@PathVariable("id") int id, Model model) {
 		Thing thing = thingService.getById(id);
 		thing.setDone(false);
-		model.addAttribute("students", thingService.getAll());
+		model.addAttribute("thing", thingService.getAll());
 		return "redirect:/";
 	}
 	
@@ -81,7 +72,7 @@ public class ThingController {
 	@PostMapping("update/{id}")
     public String update(@PathVariable("id") long id, Thing thing, Model model) {
         thingService.update(thing);
-        model.addAttribute("students", thingService.getAll());
+        model.addAttribute("thing", thingService.getAll());
         return "redirect:/";
     }
 	
@@ -89,7 +80,7 @@ public class ThingController {
 	public String delete(@PathVariable("id") int id, Model model){
 		Thing thing = thingService.getById(id);
 		thingService.delete(thing);
-		model.addAttribute("students", thingService.getAll());
+		model.addAttribute("thing", thingService.getAll());
         return "redirect:/";
 	}
 	
