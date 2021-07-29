@@ -1,4 +1,5 @@
 # Spring-ToDoList
+A to-do list web app. You can add, edit and delete the list items.
 ### List
 ![Alt Text](https://github.com/akbulutmustafa/Spring-ToDoList/blob/main/src/main/resources/static/M1.PNG)
 ### isDone
